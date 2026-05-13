@@ -74,12 +74,12 @@ mood_canvas/
 
 # 🎯 Future Improvements
 
-Mood history tracking
-Dark/light mode toggle
-Sound effects for moods
-User-customized quotes
-Local storage support
-Mood analytics dashboard
+1. Mood history tracking
+2. Dark/light mode toggle
+3. Sound effects for moods
+4. User-customized quotes
+5. Local storage support
+6. Mood analytics dashboard
 
 ---
 
