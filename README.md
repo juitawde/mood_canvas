@@ -1,8 +1,88 @@
-# React + Vite
+# 🎨 Mood Canvas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mood Canvas is a visually interactive React JS application that lets users express emotions through animated mood themes, floating gradients, and dynamic UI transitions.
 
-Currently, two official plugins are available:
+Each mood changes:
+- Background gradients
+- Emojis
+- Quotes
+- Text colors
+- UI atmosphere
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Built with React and modern CSS animations for a smooth and aesthetic experience.
+
+Live Demo: 
+
+---
+
+# ✨ Features
+
+- 🌈 Dynamic mood-based themes
+- 😄 Animated emoji transitions
+- 💬 Custom quotes for every mood
+- 🫧 Glassmorphism UI
+- 🎭 Floating animated background blobs
+- 📱 Responsive design for mobile devices
+- ⚡ Smooth animations and transitions
+
+---
+
+# 🧠 Moods Included
+
+- Happy 😄
+- Sad 😔
+- Tired 😴
+- Excited 🤩
+- Angry 😡
+- Love 🥰
+- Cool 😎
+
+---
+
+# 🚀 Tech Stack
+
+- React JS
+- JavaScript (ES6+)
+- CSS3
+- Vite
+
+---
+
+# 📂 Project Structure
+
+```bash
+mood_canvas/
+│
+├── public/
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── index.css
+│
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+```
+---
+
+# 📸 Screenshots
+<img width="1470" height="826" alt="Screenshot 2026-05-06 at 12 19 50 AM" src="https://github.com/user-attachments/assets/69c2f70f-8dac-474d-9c4e-2c9d1c699a8c" />
+<img width="1467" height="824" alt="Screenshot 2026-05-13 at 5 06 52 PM" src="https://github.com/user-attachments/assets/cacfaf2d-f93d-41dc-a603-71844427c60d" />
+
+---
+
+# 🎯 Future Improvements
+
+Mood history tracking
+Dark/light mode toggle
+Sound effects for moods
+User-customized quotes
+Local storage support
+Mood analytics dashboard
+
+---
+
+# 👩‍💻 Author
+
+Made with ❤️ by Jui Tawde
