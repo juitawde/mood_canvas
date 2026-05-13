@@ -11,7 +11,7 @@ Each mood changes:
 
 Built with React and modern CSS animations for a smooth and aesthetic experience.
 
-Live Demo: 
+Live Demo: https://mood-canvas-nine.vercel.app/
 
 ---
 
