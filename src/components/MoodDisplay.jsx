@@ -5,7 +5,7 @@ function MoodDisplay({ currentMood, isAnimating }) {
     <main className="main-content">
       <div className="display-wrapper">
 
-        <div className={`mood-portal ${isAnimating ? 'pulse' : ''}`}>
+       <div className="mood-portal">
           <span
             className={`central-emoji ${
               isAnimating ? 'spin-pop' : ''
