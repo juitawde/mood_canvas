@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import './index.css'
 
+import Header from './components/Header'
+import MoodDisplay from './components/MoodDisplay'
+import MoodDock from './components/MoodDock'
+
 const MOODS = [
   { 
     id: 'happy', 
@@ -66,13 +70,13 @@ function App() {
 
   const handleMoodChange = (mood) => {
     if (mood.id === currentMood.id) return
-    
+
     setIsAnimating(true)
     setCurrentMood(mood)
-    
+
     setTimeout(() => {
       setIsAnimating(false)
-    }, 600)
+    }, 700)
   }
 
   useEffect(() => {
@@ -80,50 +84,30 @@ function App() {
   }, [currentMood])
 
   return (
-    <div className="app-container" style={{ color: currentMood.textColor }}>
-      <header className="header">
-        <h1 className="title">Mood Canvas</h1>
-        <p className="subtitle">Painting your emotions in real-time</p>
-      </header>
+    <div
+      className="app-container"
+      style={{ color: currentMood.textColor }}
+    >
+      <Header />
 
-      <main className="main-content">
-        <div className="display-wrapper">
-          <div className={`mood-portal ${isAnimating ? 'pulse' : ''}`}>
-            <span className={`central-emoji ${isAnimating ? 'spin-pop' : ''}`}>
-              {currentMood.emoji}
-            </span>
-          </div>
-          
-          <div className="mood-description">
-            <h2 className="mood-label">{currentMood.label}</h2>
-            <p className="mood-quote">{currentMood.quote}</p>
-          </div>
-        </div>
-      </main>
+      <MoodDisplay
+        currentMood={currentMood}
+        isAnimating={isAnimating}
+      />
 
-      <nav className="mood-dock">
-        <div className="dock-inner">
-          {MOODS.map((mood) => (
-            <button
-              key={mood.id}
-              className={`dock-item ${currentMood.id === mood.id ? 'active' : ''}`}
-              onClick={() => handleMoodChange(mood)}
-              title={mood.label}
-              style={{ color: currentMood.textColor }}
-            >
-              <span className="dock-emoji">{mood.emoji}</span>
-              <span className="dock-label">{mood.label}</span>
-            </button>
-          ))}
-        </div>
-      </nav>
-      
-      {/* Decorative background elements */}
+      <MoodDock
+        moods={MOODS}
+        currentMood={currentMood}
+        handleMoodChange={handleMoodChange}
+      />
+
+        {/* Decorative background elements */}
       <div className="bg-blobs">
         <div className="blob blob-1"></div>
         <div className="blob blob-2"></div>
         <div className="blob blob-3"></div>
       </div>
+
     </div>
   )
 }
