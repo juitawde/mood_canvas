@@ -5,7 +5,6 @@
   --transition-med: 0.4s;
   --font-main: 'Outfit', sans-serif;
   --font-accent: 'Playfair Display', serif;
-  /* Solid colors for better visibility */
   --card-bg-light: rgba(255, 255, 255, 0.9);
   --card-bg-dark: rgba(0, 0, 0, 0.2);
   --card-border: rgba(255, 255, 255, 0.3);
@@ -83,7 +82,6 @@ body {
   position: relative;
   width: 220px;
   height: 220px;
-  /* More opaque background for visibility */
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);

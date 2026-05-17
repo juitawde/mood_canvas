@@ -11,7 +11,6 @@ function MoodButton({
         currentMood.id === mood.id ? 'active' : ''
       }`}
       onClick={() => handleMoodChange(mood)}
-      title={mood.label}
       style={{ color: currentMood.textColor }}
     >
       <span className="dock-emoji">
