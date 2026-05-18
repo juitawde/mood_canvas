@@ -62,7 +62,6 @@ mood_canvas/
 │   │   ├── MoodDisplay.jsx
 │   │   ├── MoodDock.jsx
 │   │   ├── MoodButton.jsx
-│   │   └── BackgroundBlobs.jsx
 │   │
 │   ├── data/
 │   │   └── moods.js
