@@ -54,10 +54,22 @@ Live Demo: https://mood-canvas-nine.vercel.app/
 mood_canvas/
 │
 ├── public/
+│
 ├── src/
+│   │
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   ├── MoodDisplay.jsx
+│   │   ├── MoodDock.jsx
+│   │   ├── MoodButton.jsx
+│   │   └── BackgroundBlobs.jsx
+│   │
+│   ├── data/
+│   │   └── moods.js
+│   │
 │   ├── App.jsx
 │   ├── main.jsx
-│   ├── index.css
+│   └── index.css
 │
 ├── package.json
 ├── package-lock.json
